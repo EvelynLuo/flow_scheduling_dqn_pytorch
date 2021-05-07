@@ -1,4 +1,5 @@
 from Traffic import *
+import datetime
 
 
 def gen_batch_traffic(tasks_num):
