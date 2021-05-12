@@ -7,7 +7,7 @@ MAX_EPISODES = 2000
 
 # 1个控制器的平均算力是100K的吞吐量，平均1毫秒处理100条
 RESOLUTIONS = [100, 120, 80, 50]
-CONSIDER_TASKS, RESOLUTION_TYPE = 8, 4
+CONSIDER_TASKS, RESOLUTION_TYPE = 3, 4
 
 LR = 0.001  # learning rate
 DISCOUNT = 0.9  # reward discount
@@ -19,7 +19,7 @@ MEMORY_SIZE = 5000  # ER memory size
 Matrix:
 state[FLOW][flow_index] [FLOW_COST]
      [NETWORK][controller_index] [BAND_WIDTH | PROPAGATION_DELAY]
-     [CONTROLLER] [controller_index] [COMPUTING_POWER | STORAGE]
+     [CONTROLLER][controller_index] [COMPUTING_POWER | STORAGE]
 action[RESOLUTION |TARGET_CONTROLLER ] = [re_index, controller_index]
 '''
 # to confirm the matrix

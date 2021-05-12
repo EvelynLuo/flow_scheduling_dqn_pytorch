@@ -101,7 +101,7 @@ action[RESOLUTION |TARGET_CONTROLLER ] = [re_index, controller_index]
 
 if __name__ == "__main__":
     tasks_num, controllers_num = TASKS_NUM, CONTROLLERS_NUM
-    batch_num = 4000
+    batch_num = 400
     # 4000次批量。360个包一毫秒。
     flows = [gen_flow_info(tasks_num) for i in range(batch_num)]
     controllers = [gen_controller_info(CONTROLLERS_NUM) for i in range(batch_num)]
